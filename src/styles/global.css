@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui"
+{
+    themes: light --default, dark --prefersdark, forest;
+}
+
+.hero-background
+{
+    background-image: url('../images/Hero-Section-Image.jpg');
+}
