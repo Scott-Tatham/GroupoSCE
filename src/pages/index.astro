@@ -1,7 +1,18 @@
 ---
 import "../styles/global.css";
+import Image from "astro/components/Image.astro";
 import whoWeAreImage from "../images/Who-We-Are.jpg";
 import whatWeDoImage from "../images/What-We-Do.jpg";
+import testImage1 from "../images/Test-Image-1.jpg";
+import testImage2 from "../images/Test-Image-2.jpg";
+import testImage3 from "../images/Test-Image-3.jpg";
+import testImage4 from "../images/Test-Image-4.jpg";
+import testImage5 from "../images/Test-Image-5.jpg";
+import testImage6 from "../images/Test-Image-6.jpg";
+import testImage7 from "../images/Test-Image-7.jpg";
+import testImage8 from "../images/Test-Image-8.jpg";
+import testImage9 from "../images/Test-Image-9.jpg";
+import testImage10 from "../images/Test-Image-10.jpg";
 ---
 
 <html lang="en">
@@ -16,7 +27,7 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 	<body>
 		<div class="hero bg-[url(../images/Hero-Section-Image.jpg)] min-h-screen">
 			<div class="hero-overlay backdrop-blur-xs"></div>
-			<div class="hero-content text-neutral-content text-center">
+			<div class="hero-content text-neutral-content">
 				<div class="max-w-md">
 					<h1 class="mb-5 text-5xl font-bold">Lorem Ipsum Dolor</h1>
 					<p class="mb-5">
@@ -29,10 +40,10 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 			</div>
 		</div>
 		<div class="place-items-center w-full">
-			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5 p-5 text-neutral-content text-start">
-				<svg width="100%" height="100%" viewBox="0 0 100% 100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5 p-5 text-neutral-content text-center">
+				<svg width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 					<g mask="url('#who-we-are-mask')">
-						<image id="who-we-are-parallax" href={whoWeAreImage.src} width="100%" height="100%" y="-10%" preserveAspectRatio="xMidYMid slice"/>
+						<image id="who-we-are-parallax" href={whoWeAreImage.src} width="125%" height="125%" y="-10%" preserveAspectRatio="xMidYMid slice"/>
 					</g>
 					<defs>
 						<mask id="who-we-are-mask">
@@ -48,7 +59,7 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 					<rect class="fill-primary" x="2.5%" y="65%" width="15%" height="15%" rx="7.5%" ry="7.5%"/>
 					<rect class="fill-primary" x="82.5%" y="20%" width="15%" height="15%" rx="7.5%" ry="7.5%" />
 				</svg>
-				<div class="p-5 justify-items-center text-center">
+				<div class="p-5 justify-items-center">
 					<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
 					<p class="mb-5 text-sm md:text-md">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
@@ -61,26 +72,24 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 					</p>
 				</div>
 			</div>
-			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5 p-5 bg-secondary-content text-secondary text-start">
-				<svg class="md:order-2" width="100%" height="100%" viewBox="0 0 100% 100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5 p-5 bg-secondary-content text-secondary text-center">
+				<svg class="md:order-2" width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 					<g mask="url('#what-we-do-mask')">
-						<image id="what-we-do-parallax" href={whatWeDoImage.src} width="125%" height="125%" x="-10%" preserveAspectRatio="xMidYMid slice"/>
+						<image id="what-we-do-parallax" href={whatWeDoImage.src} width="150%" height="150%" y="-50%" preserveAspectRatio="xMidYMid slice"/>
 					</g>
 					<defs>
 						<mask id="what-we-do-mask">
-							<rect class="fill-white" x="2.5%" y="10%" width="15%" height="50%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="22.5%" y="25%" width="15%" height="25%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="22.5%" y="55%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="42.5%" y="20%" width="15%" height="60%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="62.5%" y="35%" width="15%" height="20%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="62.5%" y="60%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="82.5%" y="40%" width="15%" height="45%" rx="7.5%" ry="7.5%" />
+							<circle class="fill-white" cx="10%" cy="15%" r="5%" />
+							<circle class="fill-white" cx="45%" cy="30%" r="15%" />
+							<circle class="fill-white" cx="30%" cy="50%" r="20%" />
+							<circle class="fill-white" cx="60%" cy="65%" r="35%" />
+							<circle class="fill-white" cx="85%" cy="35%" r="5%" />
 						</mask>
 					</defs>
-					<rect class="fill-secondary" x="2.5%" y="65%" width="15%" height="15%" rx="7.5%" ry="7.5%"/>
-					<rect class="fill-secondary" x="82.5%" y="20%" width="15%" height="15%" rx="7.5%" ry="7.5%" />
+					<circle class="fill-secondary" cx="80%" cy="15%" r="10%" />
+					<circle class="fill-secondary" cx="10%" cy="75%" r="5%" />
 				</svg>
-				<div class="p-5 justify-items-center text-center">
+				<div class="p-5 justify-items-center">
 					<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
 					<p class="mb-5 text-sm md:text-md">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
@@ -94,6 +103,43 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 				</div>
 			</div>
 		</div>
+		<div class="place-items-center h-screen p-5">
+			<div class="justify-items-center h-1/5 md:h-1/4 p-5 text-neutral-content text-center">
+				<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
+			</div>
+			<div id="our-work-carousel" class="carousel carousel-center h-4/5 md:h-3/4 rounded-box">
+				<div class="carousel-item">
+					<Image src={testImage1} alt="Test Image 1" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage2} alt="Test Image 2" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage3} alt="Test Image 3" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage4} alt="Test Image 4" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage5} alt="Test Image 5" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage6} alt="Test Image 6" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage7} alt="Test Image 7" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage8} alt="Test Image 8" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage9} alt="Test Image 9" class="object-cover" />
+				</div>
+				<div class="carousel-item">
+					<Image src={testImage10} alt="Test Image 10" class="object-cover" />
+				</div>
+			</div>
+		</div>
 		<script>
 			const whoWeAreParallax = document.getElementById('who-we-are-parallax');
 			const whatWeDoParallax = document.getElementById('what-we-do-parallax');
@@ -102,7 +148,7 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 			{
 				window.addEventListener('scroll', () =>
 				{
-					whoWeAreParallax.style.transform = `translateY(${window.pageYOffset * 0.1}px)`;
+					whoWeAreParallax.style.transform = `translateY(${window.pageYOffset * 0.02}px)`;
 				});
 			}
 
@@ -110,8 +156,39 @@ import whatWeDoImage from "../images/What-We-Do.jpg";
 			{
 				window.addEventListener('scroll', () =>
 				{
-					whatWeDoParallax.style.transform = `translateX(${window.pageYOffset * 0.02}px)`;
+					whatWeDoParallax.style.transform = `translateY(${window.pageYOffset * 0.02}px)`;
 				});
+			}
+
+			const ourWorkCarousel = document.getElementById('our-work-carousel');
+
+			if (ourWorkCarousel)
+			{
+				const ourWorkItems = ourWorkCarousel.querySelectorAll('.carousel-item');
+
+				if (ourWorkItems)
+				{
+					const intervalTime = 3000;
+					let currentIndex = 0;
+
+					setInterval(() =>
+					{
+						currentIndex++;
+
+						if (currentIndex >= ourWorkItems.length)
+						{
+							currentIndex = 0;
+						}
+
+						const ourWorkItem = ourWorkItems[currentIndex] as HTMLElement;
+
+						ourWorkCarousel.scrollTo(
+						{
+							left: ourWorkItem.offsetLeft - (ourWorkCarousel.offsetWidth / 2) + (ourWorkItem.offsetWidth / 2),
+							behavior: 'smooth'
+						});
+					}, intervalTime);
+				}
 			}
 		</script>
 	</body>
