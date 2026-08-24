@@ -3,10 +3,3 @@
 {
     themes: light --default, dark --prefersdark, forest;
 }
-
-.who-are-we-image
-{
-    width: 100%;
-    height: 100%;
-    mask: url('#who-we-are-mask');
-}
