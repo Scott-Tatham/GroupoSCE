@@ -4,7 +4,9 @@
     themes: light --default, dark --prefersdark, forest;
 }
 
-.hero-background
+.who-are-we-image
 {
-    background-image: url('../images/Hero-Section-Image.jpg');
+    width: 100%;
+    height: 100%;
+    mask: url('#who-we-are-mask');
 }

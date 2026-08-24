@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import whoAreWeImage from "../images/Who-Are-We.jpg";
 ---
 
 <html lang="en">
@@ -12,15 +13,49 @@ import "../styles/global.css";
 		<title>Groupo SCE</title>
 	</head>
 	<body>
-		<div class="hero min-h-screen hero-background">
-			<div class="hero-overlay"></div>
+		<div class="hero bg-[url(../images/Hero-Section-Image.jpg)] min-h-screen">
+			<div class="hero-overlay backdrop-blur-xs"></div>
 			<div class="hero-content text-neutral-content text-center">
 				<div class="max-w-md">
 					<h1 class="mb-5 text-5xl font-bold">Lorem Ipsum Dolor</h1>
 					<p class="mb-5">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
 					</p>
-					<button class="btn btn-primary" onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })">Contacto!</button>
+					<div class="aura aura-silver">
+						<button class="btn btn-primary" onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })">Contacto!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="place-items-center w-full">
+			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-start md:place-items-center justify-center w-full h-screen md:gap-5 p-5 text-neutral-content text-start">
+				<svg width="100%" height="100%" viewBox="0 0 100% 100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+					<image href={whoAreWeImage.src} class="who-are-we-image" preserveAspectRatio="xMidYMid slice"/>
+					<defs>
+						<mask id="who-we-are-mask">
+							<rect class="fill-white" x="2.5%" y="10%" width="15%" height="50%" rx="7.5%" ry="7.5%" />
+							<rect class="fill-white" x="22.5%" y="25%" width="15%" height="25%" rx="7.5%" ry="7.5%" />
+							<rect class="fill-white" x="22.5%" y="55%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
+							<rect class="fill-white" x="42.5%" y="20%" width="15%" height="60%" rx="7.5%" ry="7.5%" />
+							<rect class="fill-white" x="62.5%" y="35%" width="15%" height="20%" rx="7.5%" ry="7.5%" />
+							<rect class="fill-white" x="62.5%" y="60%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
+							<rect class="fill-white" x="82.5%" y="40%" width="15%" height="45%" rx="7.5%" ry="7.5%" />
+						</mask>
+					</defs>
+					<rect class="fill-primary" x="2.5%" y="65%" width="15%" height="15%" rx="7.5%" ry="7.5%"/>
+					<rect class="fill-primary" x="82.5%" y="20%" width="15%" height="15%" rx="7.5%" ry="7.5%" />
+				</svg>
+				<div class="p-5 justify-items-center text-center">
+					<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
+					<p class="mb-5 text-sm md:text-md">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+					</p>
+					<p class="mb-5 text-sm md:text-md">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+					</p>
+					<p class="mb-5 text-sm md:text-md">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+					</p>
 				</div>
 			</div>
 		</div>
