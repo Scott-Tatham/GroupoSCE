@@ -25,7 +25,7 @@ import testImage10 from "../images/Test-Image-10.jpg";
 		<title>Groupo SCE</title>
 	</head>
 	<body>
-		<div class="hero bg-[url(../images/Hero-Section-Image.jpg)] min-h-screen">
+		<div class="hero bg-[url(../images/Hero-Section-Image.jpg)] h-screen">
 			<div class="hero-overlay backdrop-blur-xs"></div>
 			<div class="hero-content text-neutral-content text-center">
 				<div class="max-w-md">
@@ -34,162 +34,179 @@ import testImage10 from "../images/Test-Image-10.jpg";
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
 					</p>
 					<div class="aura aura-silver">
-						<button class="btn btn-primary" onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })">Contacto!</button>
+						<button class="btn btn-primary" onclick="document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })">Contacto!</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="place-items-center w-full">
-			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5 p-5 text-neutral-content text-center">
-				<svg width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-					<g mask="url('#who-we-are-mask')">
-						<image id="who-we-are-parallax" href={whoWeAreImage.src} width="125%" height="125%" y="-10%" preserveAspectRatio="xMidYMid slice"/>
-					</g>
-					<defs>
-						<mask id="who-we-are-mask">
-							<rect class="fill-white" x="2.5%" y="10%" width="15%" height="50%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="22.5%" y="25%" width="15%" height="25%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="22.5%" y="55%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="42.5%" y="20%" width="15%" height="60%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="62.5%" y="35%" width="15%" height="20%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="62.5%" y="60%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
-							<rect class="fill-white" x="82.5%" y="40%" width="15%" height="45%" rx="7.5%" ry="7.5%" />
-						</mask>
-					</defs>
-					<rect class="fill-primary" x="2.5%" y="65%" width="15%" height="15%" rx="7.5%" ry="7.5%"/>
-					<rect class="fill-primary" x="82.5%" y="20%" width="15%" height="15%" rx="7.5%" ry="7.5%" />
-				</svg>
-				<div class="p-5 justify-items-center">
-					<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
-					<p class="mb-5 text-sm md:text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
-					</p>
-					<p class="mb-5 text-sm md:text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
-					</p>
-					<p class="mb-5 text-sm md:text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
-					</p>
-				</div>
-			</div>
-			<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5 p-5 bg-secondary-content text-secondary text-center">
-				<svg class="md:order-2" width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-					<g mask="url('#what-we-do-mask')">
-						<image id="what-we-do-parallax" href={whatWeDoImage.src} width="150%" height="150%" y="-50%" preserveAspectRatio="xMidYMid slice"/>
-					</g>
-					<defs>
-						<mask id="what-we-do-mask">
-							<circle class="fill-white" cx="10%" cy="15%" r="5%" />
-							<circle class="fill-white" cx="45%" cy="30%" r="15%" />
-							<circle class="fill-white" cx="30%" cy="50%" r="20%" />
-							<circle class="fill-white" cx="60%" cy="65%" r="35%" />
-							<circle class="fill-white" cx="85%" cy="35%" r="5%" />
-						</mask>
-					</defs>
-					<circle class="fill-secondary" cx="80%" cy="15%" r="10%" />
-					<circle class="fill-secondary" cx="10%" cy="75%" r="5%" />
-				</svg>
-				<div class="p-5 justify-items-center">
-					<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
-					<p class="mb-5 text-sm md:text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
-					</p>
-					<p class="mb-5 text-sm md:text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
-					</p>
-					<p class="mb-5 text-sm md:text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
-					</p>
+		<div class="place-items-center h-screen text-neutral-content text-center">
+			<div class="place-items-center w-full h-full p-5 overflow-hidden">
+				<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5">
+					<svg class="w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+						<g mask="url('#who-we-are-mask')">
+							<image id="who-we-are-parallax" href={whoWeAreImage.src} width="125%" height="125%" y="-10%" preserveAspectRatio="xMidYMid slice"/>
+						</g>
+						<defs>
+							<mask id="who-we-are-mask">
+								<rect class="fill-white" x="2.5%" y="10%" width="15%" height="50%" rx="7.5%" ry="7.5%" />
+								<rect class="fill-white" x="22.5%" y="25%" width="15%" height="25%" rx="7.5%" ry="7.5%" />
+								<rect class="fill-white" x="22.5%" y="55%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
+								<rect class="fill-white" x="42.5%" y="20%" width="15%" height="60%" rx="7.5%" ry="7.5%" />
+								<rect class="fill-white" x="62.5%" y="35%" width="15%" height="20%" rx="7.5%" ry="7.5%" />
+								<rect class="fill-white" x="62.5%" y="60%" width="15%" height="30%" rx="7.5%" ry="7.5%" />
+								<rect class="fill-white" x="82.5%" y="40%" width="15%" height="45%" rx="7.5%" ry="7.5%" />
+							</mask>
+						</defs>
+						<rect class="fill-primary" x="2.5%" y="65%" width="15%" height="15%" rx="7.5%" ry="7.5%"/>
+						<rect class="fill-primary" x="82.5%" y="20%" width="15%" height="15%" rx="7.5%" ry="7.5%" />
+					</svg>
+					<div class="place-content-center justify-items-center w-full h-full p-5">
+						<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
+						<p class="mb-5 text-sm md:text-md">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+						</p>
+						<p class="mb-5 text-sm md:text-md">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+						</p>
+						<p class="mb-5 text-sm md:text-md">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="place-items-center h-screen p-5">
-			<div class="justify-items-center h-1/5 md:h-1/4 p-5 text-neutral-content text-center">
-				<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
-			</div>
-			<div id="our-work-carousel" class="carousel carousel-center h-4/5 md:h-3/4 rounded-box">
-				<div class="carousel-item">
-					<Image src={testImage1} alt="Test Image 1" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage2} alt="Test Image 2" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage3} alt="Test Image 3" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage4} alt="Test Image 4" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage5} alt="Test Image 5" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage6} alt="Test Image 6" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage7} alt="Test Image 7" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage8} alt="Test Image 8" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage9} alt="Test Image 9" class="object-cover" />
-				</div>
-				<div class="carousel-item">
-					<Image src={testImage10} alt="Test Image 10" class="object-cover" />
+		<div class="place-items-center h-screen bg-secondary-content text-secondary text-center">
+			<div class="place-items-center w-full h-full p-5 overflow-hidden">
+				<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-screen md:gap-5">
+					<svg class="md:order-2 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+						<g mask="url('#what-we-do-mask')">
+							<image id="what-we-do-parallax" href={whatWeDoImage.src} width="150%" height="150%" y="-50%" preserveAspectRatio="xMidYMid slice"/>
+						</g>
+						<defs>
+							<mask id="what-we-do-mask">
+								<circle class="fill-white" cx="10%" cy="15%" r="5%" />
+								<circle class="fill-white" cx="40%" cy="23%" r="13%" />
+								<circle class="fill-white" cx="60%" cy="65%" r="35%" />
+								<circle class="fill-white" cx="85%" cy="35%" r="5%" />
+							</mask>
+						</defs>
+						<circle class="fill-secondary" cx="80%" cy="15%" r="10%" />
+						<circle class="fill-secondary" cx="10%" cy="75%" r="5%" />
+					</svg>
+					<div class="place-content-center justify-items-center w-full h-full p-5">
+						<h1 class="mb-5 text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
+						<p class="mb-5 text-sm md:text-md">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+						</p>
+						<p class="mb-5 text-sm md:text-md">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+						</p>
+						<p class="mb-5 text-sm md:text-md">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<script>
-			const whoWeAreParallax = document.getElementById('who-we-are-parallax');
-			const whatWeDoParallax = document.getElementById('what-we-do-parallax');
-
-			if (whoWeAreParallax)
-			{
-				window.addEventListener('scroll', () =>
-				{
-					whoWeAreParallax.style.transform = `translateY(${window.pageYOffset * 0.02}px)`;
-				});
-			}
-
-			if (whatWeDoParallax)
-			{
-				window.addEventListener('scroll', () =>
-				{
-					whatWeDoParallax.style.transform = `translateY(${window.pageYOffset * 0.02}px)`;
-				});
-			}
-
-			const ourWorkCarousel = document.getElementById('our-work-carousel');
-
-			if (ourWorkCarousel)
-			{
-				const ourWorkItems = ourWorkCarousel.querySelectorAll('.carousel-item');
-
-				if (ourWorkItems)
-				{
-					const intervalTime = 3000;
-					let currentIndex = 0;
-
-					setInterval(() =>
-					{
-						currentIndex++;
-
-						if (currentIndex >= ourWorkItems.length)
-						{
-							currentIndex = 0;
-						}
-
-						const ourWorkItem = ourWorkItems[currentIndex] as HTMLElement;
-
-						ourWorkCarousel.scrollTo(
-						{
-							left: ourWorkItem.offsetLeft - (ourWorkCarousel.offsetWidth / 2) + (ourWorkItem.offsetWidth / 2),
-							behavior: 'smooth'
-						});
-					}, intervalTime);
-				}
-			}
-		</script>
+		<div class="place-items-center h-screen text-neutral-content text-center">
+			<div class="place-items-center w-full h-full p-5 overflow-hidden">
+				<div class="justify-items-center h-1/10 md:h-1/4 p-2 md:p-5">
+					<h1 class="text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
+				</div>
+				<div id="our-work-carousel" class="carousel carousel-center h-9/10 md:h-3/4 rounded-box">
+					<div class="carousel-item">
+						<Image src={testImage1} alt="Test Image 1" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage2} alt="Test Image 2" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage3} alt="Test Image 3" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage4} alt="Test Image 4" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage5} alt="Test Image 5" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage6} alt="Test Image 6" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage7} alt="Test Image 7" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage8} alt="Test Image 8" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage9} alt="Test Image 9" class="object-cover" />
+					</div>
+					<div class="carousel-item">
+						<Image src={testImage10} alt="Test Image 10" class="object-cover" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact-us" class="place-items-center h-screen bg-secondary-content text-secondary text-center">
+			<div class="place-items-center w-full h-full p-5 overflow-hidden">
+				<div class="justify-items-center h-1/10 md:h-1/4 p-2 md:p-5">
+					<h1 class="text-2xl md:text-5xl font-bold">Lorem Ipsum Dolor</h1>
+				</div>
+				<div class="isolate grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 place-items-center justify-center w-full h-9/10 md:h-3/4 gap-2 md:gap-0">
+					<div class="place-content-center justify-items-center w-full h-full p-2 md:p-5">
+						<div class="place-content-center justify-items-center w-full h-1/3 mb-2 md:mb-5">
+							<p class="mb-2 md:mb-5 text-[0.6rem] md:text-xs">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+							</p>
+							<p class="mb-2 md:mb-5 text-[0.6rem] md:text-xs">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+							</p>
+							<p class="mb-2 md:mb-5 text-[0.6rem] md:text-xs">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod.
+							</p>
+						</div>
+						<div class="place-content-center justify-items-center w-fit h-2/3">
+							<iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d364.8195828161387!2d-100.4336013776019!3d20.55855454921181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1788896126208!5m2!1sen!2smx" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+						</div>
+					</div>
+					<div class="place-content-center justify-items-center w-full h-full">
+						<form class="flex flex-col gap-1 place-content-center justify-items-center w-full md:w-4/5 h-full p-5" action="https://formsubmit.co/b4a11c6269e56c3659ef69461e06c40a" method="POST">
+							<form class="place-content-center justify-items-center h-full p-2 md:p-5">
+								<label class="label w-full md:mb-5">
+									<span class="w-2/5 md:w-3/10">Nombre</span>
+									<input id="form-name" type="text" name="name" class="input w-full" required />
+								</label>
+								<label class="label w-full md:mb-5">
+									<span class="w-2/5 md:w-3/10">Correo</span>
+									<input id="form-email" type="email" name="email" class="input w-full" required />
+								</label>
+								<label class="label w-full md:h-full md:mb-5">
+									<span class="w-2/5 md:w-3/10">Mensaje</span>
+									<textarea name="message" class="textarea w-full md:h-full" required />
+								</label>
+								<input type="hidden" name="_replyto" value="email">
+								<input id="form-subject" type="hidden" name="_subject" value="New Enquiry">
+								<input type="hidden" name="_template" value="table">
+								<input type="hidden" name="_autoresponse" value="Your enquiry was received! We will get back to you as soon as possible.">
+								<input type="hidden" name="_next" value="http://localhost:4321/GroupoSCE">
+								<div class="flex place-content-end justify-items-center w-full">
+									<button type="submit" class="btn btn-primary">Enviar!</button>
+								</div>
+							</form>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
+	<script>
+		import {initialiseParallax} from "../scripts/parallax.js";
+		import {initialiseCarouselScroll} from "../scripts/carousel.js";
+		import {initialiseFormSubjectUpdater} from "../scripts/email.js";
+
+		initialiseFormSubjectUpdater('form-subject', 'form-name', 'form-email')
+		initialiseParallax('who-we-are-parallax', 0.02);
+		initialiseParallax('what-we-do-parallax', 0.02);
+		initialiseCarouselScroll('our-work-carousel', '.carousel-item', 3000);
+	</script>
 </html>
